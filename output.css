@@ -982,3 +982,13 @@ hr {
     height: 24rem;
   }
 }
+
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity)) /* #0f172a */;
+}
+
+.text-slate-50 {
+  --tw-text-opacity: 1;
+  color: rgb(248 250 252 / var(--tw-text-opacity)) /* #f8fafc */;
+}
