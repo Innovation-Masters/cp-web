@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Home() {
     return (
         <main className="flex flex-col gap-y-8 mx-52">
@@ -14,7 +16,7 @@ export default function Home() {
 
                         Venha nos visitar e permita-se deslumbrar pela magia das joias que temos a oferecer. Aqui, na Innova Jewelry, temos a joia perfeita para complementar a sua história, para eternizar momentos e criar memórias que serão apreciadas para sempre!
                     </p>
-                    <button className="bg-dark rounded py-4 px-12 font-bold text-light hover:opacity-70 self-start">Acessar Loja</button>
+                    <Link to='/produtos' className="bg-dark rounded py-4 px-12 font-bold text-light hover:opacity-70 self-start">Acessar Loja</Link>
                 </div>
                 <img className="w-1/2" src="../../public/main.jpg" />
             </section>
