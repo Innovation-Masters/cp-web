@@ -992,3 +992,15 @@ hr {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity)) /* #f8fafc */;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem /* 24px */;
+}
