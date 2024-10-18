@@ -76,6 +76,7 @@ hr {
 
 .input-dado::placeholder{
     color: #FAF3E6;
+    font-weight: 500;
 }
 
 .icon-dado{
