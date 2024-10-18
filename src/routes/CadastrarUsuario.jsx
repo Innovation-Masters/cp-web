@@ -59,21 +59,21 @@ const CadastrarUsuario = () => {
             body:JSON.stringify(usuarios),
         })
         .then((response) => {
-            if (!response.ok) {
-                throw new Error('Erro ao criar a conta.');
-            }
-            return response.json();
+                if (!response.ok) {
+                    throw new Error('Erro ao criar a conta.');
+                }
+                return response.json();
             })
             .then((data) => {
-            // Salva os dados do usuário no localStorage para manter o estado de autenticação
-            sessionStorage.setItem('usuario', JSON.stringify(data));
-            alert("Conta criada com sucesso!");
-            // Redireciona para a página de cadastrar produto
-            navigate("/produtos");
+                // Salva os dados do usuário no localStorage para manter o estado de autenticação
+                sessionStorage.setItem('usuario', JSON.stringify(data));
+                alert("Conta criada com sucesso!");
+                // Redireciona para a página de cadastrar produto
+                navigate("/produtos");
             })
             .catch((error) => {
-            console.error(error);
-            alert('Erro ao criar a conta. Tente novamente.');
+                console.error(error);
+                alert('Erro ao criar a conta. Tente novamente.');
             });
         };
     
@@ -93,19 +93,18 @@ const CadastrarUsuario = () => {
     return (
         <main className="bg-cadastro flex justify-center items-start min-h-screen">
             <section className="box-login">
-                {/* <form onSubmit={handleSubmit}> */}
-                <form>
+                <form onSubmit={handleSubmit}>
                     <h1 className="text-light text-title text-4xl text-center font-extrabold">Criar uma Conta</h1>
                     <div className="input-field relative">
                         <input 
                             type="text" 
                             name="usuario"
                             className="input-dado w-full border border-white/20 rounded-full text-light text-lg"
-                            // value={usuarios.usuario}
+                            value={usuarios.usuario}
                             placeholder="Usuário"
                             required 
                             /* o onChange é utili em situações que é necessários reagir a cada alteração do input */
-                            // onChange={handleChange}
+                            onChange={handleChange}
                             />
                         <img src={IconUsuario} alt="Icone Usuario" className="icon-dado absolute"/>
                     </div>
@@ -114,11 +113,11 @@ const CadastrarUsuario = () => {
                             type="password" 
                             name="senha"
                             className="input-dado w-full border border-white/20 rounded-full text-light text-lg"
-                            // value={usuarios.senha}
+                            value={usuarios.senha}
                             placeholder="Senha"
                             required
                             /* o onChange é utili em situações que é necessários reagir a cada alteração do input */
-                            // onChange={handleChange}
+                            onChange={handleChange}
                         />
                         <img src={IconSenha} alt="Icone Senha" className="icon-dado absolute"/>
                     </div>
@@ -127,11 +126,11 @@ const CadastrarUsuario = () => {
                             type="password"
                             name="confirmarSenha"
                             className="input-dado w-full border border-white/20 rounded-full text-light text-lg"
-                            // value={confirmarSenha}
+                            value={confirmarSenha}
                             placeholder="Confirme sua Senha"
                             required
                             /* o onChange é utili em situações que é necessários reagir a cada alteração do input */
-                            // onChange={handleConfirmarSenhaChange}
+                            onChange={handleConfirmarSenhaChange}
                         />
                         <img src={IconSenha} alt="Icone Senha" className="icon-dado absolute"/>
                     </div>
