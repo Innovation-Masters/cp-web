@@ -48,6 +48,12 @@ hr {
     text-shadow: #000 1px 1px 10px;
 }
 
+.bg-cadastro{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url('./../public/cadastrar-background.png') no-repeat center / cover;
+    margin-top: -56px;
+    text-shadow: #000 1px 1px 10px;
+}
+
 .box-login{
     backdrop-filter: blur(10px);
     background-color: rgba(206, 180, 131, 0.5);
