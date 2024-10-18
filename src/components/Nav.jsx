@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Nav() {
     return (
 
-        <header className="flex justify-evenly items-center py-8 sticky top-0 bg-dark">
+        <header className="flex justify-evenly items-center py-8 sticky top-0 bg-dark header-position">
             <Link className="text-2xl font-extrabold text-light">Innova Jewelry</Link>
             <nav>
                 <ul className="flex text-dark font-bold gap-x-8 items-center text-lg text-light">

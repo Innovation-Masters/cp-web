@@ -38,6 +38,10 @@ hr {
     color: #FAF3E6;
 }
 
+.header-position{
+    z-index: 10;
+}
+
 .bg-login{
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('./../public/login-background.png') no-repeat center / cover;
     margin-top: -56px;
@@ -51,7 +55,7 @@ hr {
     border-radius: 15px;
     width: 450px;
     padding: 2rem 2.5rem;
-    margin: 45px 0 180px 0;
+    margin: 45px 0 250px 0;
 }
 
 .text-title{
@@ -81,3 +85,39 @@ hr {
     width: .1.4rem;
     height: 1.4rem;
 }
+
+.recall-forget{
+    justify-content: space-between;
+    font-size: .9rem;
+    margin: -5px 0 15px 0;
+}
+
+.recall-forget input{
+    margin-right: 5px;
+}
+
+.recall-forget a:hover{
+    text-decoration: underline;
+}
+
+.login-btn{
+    height: 3rem;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    transition: opacity 0.8s ease;
+}
+
+.login-btn:hover{
+    opacity: 0.7;;
+}
+
+.signup-link{
+    gap: 7px;
+    padding-top: 20px;
+}
+
+.signup-link a:hover{
+    text-decoration: underline;
+}
+
